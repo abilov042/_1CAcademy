@@ -1,6 +1,7 @@
 package org.example._1cacademy.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.example._1cacademy.dto.ExerciseDto;
 import org.example._1cacademy.dto.ExerciseRequestDto;
 import org.example._1cacademy.dto.ExerciseResponseDto;
 import org.example._1cacademy.dto.UserSaveDto;
@@ -27,7 +28,7 @@ public class UserController {
     }
 
     @PostMapping("/doExercise")
-    public ResponseEntity<DataResult<ExerciseResponseDto>> doExercise(@RequestBody List<ExerciseRequestDto> exerciseRequestsDto) {
+    public ResponseEntity<DataResult<ExerciseResponseDto>> doExercise(@RequestBody ExerciseRequestDto exerciseRequestsDto) {
         return ResponseEntity.ok(this.userService.doExercise(exerciseRequestsDto));
     }
 

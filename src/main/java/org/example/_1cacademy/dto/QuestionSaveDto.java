@@ -11,6 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 public class QuestionSaveDto {
     private String question;
-    private int countTrueAnswers;
+    private String questionType;
     private List<AnswerSaveDto> answersSaveDto;
 }

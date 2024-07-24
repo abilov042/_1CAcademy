@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example._1cacademy.model.enums.EQuestionType;
 
 
 @Entity
@@ -24,7 +25,8 @@ public class Question {
     @Column(name = "question")
     private String question;
 
-    @Column(name = "count_true_answers")
-    private int countTrueAnswers;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "question_type")
+    private EQuestionType questionType;
 
 }

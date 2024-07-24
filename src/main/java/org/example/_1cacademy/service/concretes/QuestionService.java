@@ -45,7 +45,7 @@ public class QuestionService implements IQuestionService {
             QuestionResponseDto questionResponseDto = new QuestionResponseDto();
             questionResponseDto.setId(question.getId());
             questionResponseDto.setQuestion(question.getQuestion());
-            questionResponseDto.setCountTrueQuestions(question.getCountTrueAnswers());
+            questionResponseDto.setQuestionType(question.getQuestionType());
 
 
             List<AnswerResponseDto> answerResponsesDto = new ArrayList<>();

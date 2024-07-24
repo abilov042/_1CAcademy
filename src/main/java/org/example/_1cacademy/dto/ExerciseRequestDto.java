@@ -10,6 +10,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ExerciseRequestDto {
-    private int questionId;
-    private List<Integer> answerIds;
+    private int userId;
+    List<ExerciseDto> exercises;
 }
